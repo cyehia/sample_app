@@ -1,2 +1,8 @@
-require "test_notifier/autotest"
+# require "autotest/test_notifier"
 require "autotest/inotify"
+
+Autotest.add_hook :initialize do |autotest|
+    autotest.addmapping(%r%^spec/(requests)/.*rb$%) do |filename, _|
+        filename
+    end
+end
