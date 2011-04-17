@@ -21,6 +21,7 @@ gem 'sqlite3'
 # gem 'bj'
 # gem 'nokogiri'
 gem 'sqlite3-ruby', '1.3.1', :require => 'sqlite3'
+gem 'gravatar_image_tag', '0.1.0'
 # gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
